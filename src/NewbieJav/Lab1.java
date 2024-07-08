@@ -14,10 +14,10 @@ public class Lab1 {
 		System.out.println(name + " có điểm = " + score);
 
 		// Exercise 2
-		System.out.println("Chiều dài của hình chữ nhật là " + length);
+		System.out.println("Chiều dài của hình chữ nhật là ");
 		double length = scanner.nextInt();
 
-		System.out.println("Chiều rộng của hình chữ nhật là " + width);
+		System.out.println("Chiều rộng của hình chữ nhật là ");
 		double width = scanner.nextInt();
 
 		double perimeter = (length + width) * 2;
@@ -36,5 +36,7 @@ public class Lab1 {
 		double volume = Math.pow(edge, 3);
 
 		System.out.println("Thể tích hình lập phương là " + volume);
+
+		scanner.close();
 	}
 }
