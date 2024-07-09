@@ -1,32 +1,33 @@
 package chapter04;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		String name = in.nextLine();
-		int age = in.nextInt();
-		Student newbie = new Student(name, age);
+//		String name = in.nextLine();
+//		int age = in.nextInt();
+		ArrayList<Student> newbie = new ArrayList<Student>();
 
-//		for (int i = 0; i < 5; i++) {
-//			newbie[i].name = in.nextLine();
-//			newbie[i].age = in.nextInt();
-//		}
+		for (int i = 0; i < 5; i++) {
+			Student tmp = new Student();
+			String name = in.nextLine();
+			int age = in.nextInt();
+			in.nextLine();
 
-//		for (int i = 0; i < 5; i++) {
-		System.out.println("Name: " + newbie.getName());
-		System.out.println("Age: " + newbie.getAge());
-		System.out.println("\n");
-		// }
+			tmp.name = name;
+			tmp.age = age;
 
-		newbie.setName("Niggar");
-		newbie.setAge(100);
+			newbie.add(tmp);
+		}
 
-		System.out.println("Name: " + newbie.getName());
-		System.out.println("Age: " + newbie.getAge());
-		System.out.println("\n");
+		for (int i = 0; i < 5; i++) {
+//			System.out.println("Name: " + newbie[i].name);
+//			System.out.println("Age: " + newbie[i].age);
+			System.out.println(newbie.get(i).name + " " + newbie.get(i).age);
+		}
 
 		in.close();
 	}

@@ -1,8 +1,11 @@
 package chapter04;
 
 public class Student {
-	private String name;
-	private int age;
+//	private String name;
+//	private int age;
+
+	String name;
+	int age;
 
 	public Student() {
 
@@ -13,9 +16,9 @@ public class Student {
 		this.age = age;
 	}
 
-	//Có thể Click chuột phải chọn Source sau đó 
-	//chọn Generate Getters and Setters để tạo tự
-	//động hàm gán và lấy
+	// Có thể Click chuột phải chọn Source sau đó
+	// chọn Generate Getters and Setters để tạo tự
+	// động hàm gán và lấy
 
 //	public String getName() {
 //		return this.name;
@@ -31,5 +34,5 @@ public class Student {
 //
 //	public void setAge(int age1) {
 //		this.age = age1;
-	}
+	// }
 }
